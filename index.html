@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Certificate Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="title">Certificate Viewer</div>
+    <nav class="controls" aria-label="Viewer controls">
+      <a class="btn" href="https://certificates.cs50.io/14ccad89-47e4-45df-8ee6-b40e73588e0f.pdf?size=letter">Letter</a>
+      <a class="btn" href="https://certificates.cs50.io/14ccad89-47e4-45df-8ee6-b40e73588e0f.pdf?size=a4">A4</a>
+      <a class="btn" href="https://certificates.cs50.io/14ccad89-47e4-45df-8ee6-b40e73588e0f.pdf?size=letter" target="_blank" rel="noopener">Open</a>
+      <a class="btn" href="https://certificates.cs50.io/14ccad89-47e4-45df-8ee6-b40e73588e0f.pdf?size=letter" download>Download</a>
+    </nav>
+  </header>
+
+  <main class="viewer">
+    <iframe id="pdfFrame" title="Certificate PDF" loading="lazy" src="https://drive.google.com/file/d/1hi6bW4oKDLYEYjw4l-nw1gVuk3QEWeQI/view?usp=drivesdk"></iframe>
+    <div class="fallback">
+      <p>If the PDF does not load, use the links above to open or download it.</p>
+    </div>
+  </main>
+
+  <noscript>
+    This page is fully functional without JavaScript.
+  </noscript>
+</body>
+</html>
